@@ -136,6 +136,7 @@ p{
     .cards{
         display: flex;
         gap: 20px;
+
     }
 
     .card{
@@ -143,6 +144,7 @@ p{
         padding: 20px 15px;
         padding-bottom: 40px;
         text-align: center;
+  
     }
 
     .card img{
@@ -158,4 +160,72 @@ p{
         margin: 30px auto;
     }
  
+}
+
+
+@media screen and (min-width:1100px) {
+    .kontejner{
+        max-width: 1040px;
+        margin: auto;
+        padding: 0;
+        margin-top: 130px;
+    }
+
+    .section,
+    .sluzby{
+        display: flex;
+        gap: 60px;
+    }
+
+    .uvod{
+        order: -1;
+    }
+
+    h1, h2, p{
+        text-align: left;
+    }
+
+    .uvodni_obrazek,
+    .uvod{
+        flex-basis: 490px;
+        
+    }
+
+    .button{
+        margin: 0;
+        margin-right: 20px;
+    }
+
+    h1::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: var(--blue) ;
+    margin: 10px 0;
+}
+
+    .uvodni_obrazek img{
+        max-width: 425px;
+        margin: 0 auto;
+    }
+
+
+    .card1{
+        order: -1;
+        flex: 1 0 550px;
+    }
+
+    .card2{
+        flex: 1 0 550px;
+
+    }
+
+  
+
+    .sluzby1{
+        flex-basis: 430px;
+    }
+
+    
 }
